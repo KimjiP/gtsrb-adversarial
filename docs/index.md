@@ -1,5 +1,7 @@
 ## Thesis Title: Analyzing the Robustness of Deep Learning Classifiers for Traffic Sign Recognition Systems
 
+[Download the paper here.](https://bit.ly/3h1VvDA)
+
 Find the [source code on GitHub](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/model2_gtsrb.py) for this project.
 
 The [German Traffic Sign Recognition Benchmark (GTSRB) Dataset](https://benchmark.ini.rub.de/gtsrb_news.html) was used in training a CNN built using TensorFlow.
@@ -35,4 +37,4 @@ The standard CNN is the same architecture used in Princeton University INSPIRE g
 
 ### Results Summary
 ![results summary](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/summary.png)
-![transferability](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/transferability.PNG)
+![transferability](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/transferability2.PNG)
