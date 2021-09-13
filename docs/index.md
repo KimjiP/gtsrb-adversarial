@@ -2,7 +2,7 @@
 
 [Download the paper here.](https://bit.ly/3h1VvDA)
 
-Find the [source code on GitHub](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/model2_gtsrb.py) for this project.
+Find the [source code on GitHub here](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/model2_gtsrb.py).
 
 The [German Traffic Sign Recognition Benchmark (GTSRB) Dataset](https://benchmark.ini.rub.de/gtsrb_news.html) was used in training a CNN built using TensorFlow.
 
