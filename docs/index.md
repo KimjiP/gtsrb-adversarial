@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+## Thesis Title: Analyzing the Robustness of Deep Learning Classifiers for Traffic Sign Recognition Systems
 
-You can use the [editor on GitHub](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Find the [source code on GitHub](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/model2_gtsrb.py) for this project.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The [German Traffic Sign Recognition Benchmark (GTSRB) Dataset](https://benchmark.ini.rub.de/gtsrb_news.html) was used in training a CNN built using TensorFlow.
 
-### Markdown
+Sample GTSRB Images:
+![Sample GTSRB](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/gtsrb.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Trying Different Explainable AI techniques for the GTSRB images
 
-```markdown
-Syntax highlighted code block
+![Explainable AI](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/xai.PNG)
 
-# Header 1
-## Header 2
-### Header 3
+Grad-CAM offers the best visualization as it successfully highlights parts of the images that contributed to the final classification decision. LIME, Occlusion sensitivity, and SmoothGRAD failed at this task.
 
-- Bulleted
-- List
+### Building and Training a Convolutional Neural Network (CNN) for Traffic Sign Recognition (TSR)
 
-1. Numbered
-2. List
+The standard CNN is the same architecture used in Princeton University INSPIRE group's [research about adversarial attacks](https://arxiv.org/pdf/1802.06430.pdf) . The table below shows its layers.
 
-**Bold** and _Italic_ and `Code` text
+![standard CNN](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/standard%20cnn.PNG)
 
-[Link](url) and ![Image](src)
-```
+### Results
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Grad-CAM Explainers for [Carlini-Wagner Attack](https://arxiv.org/pdf/1608.04644.pdf)
 
-### Jekyll Themes
+![standard CNN cw attack](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/cw.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### Grad-CAM Explainers for [JSMA Attack](https://arxiv.org/pdf/1511.07528.pdf)
 
-### Support or Contact
+![standard CNN jsma attack](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/jsma.png)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+#### Grad-CAM Explainers for [DeepFool Attack](https://arxiv.org/pdf/1511.04599.pdf)
+![standard CNN deepfool attack](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/deepfool.png)
+
+### Results Summary
+![results summary](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/summary.png)
+![transferability](https://github.com/KimjiP/gtsrb-adversarial-attack-grad-cam/blob/main/docs/transferability.PNG)
